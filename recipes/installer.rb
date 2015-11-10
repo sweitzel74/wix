@@ -18,8 +18,6 @@
 # limitations under the License.
 #
 
-include_recipe 'dotnetframework'
-
 download_url = CodePlex.download_url('wix', node['wix']['installer_download_id'])
 file_name = node['wix']['installer_file_name']
 

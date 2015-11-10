@@ -9,7 +9,6 @@ require 'chefspec/berkshelf'
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
 
@@ -22,10 +21,4 @@ RSpec.configure do |config|
   # Select the Fauxhai template to load
   config.platform = 'windows'
   config.version = '2008R2'
-
-  config.before(:each) do
-    ENV['WINDIR'] = 'c:\Windows'
-    ::File::ALT_SEPARATOR =
-      '\\' # https://github.com/sethvargo/chefspec/issues/371
-  end
 end
