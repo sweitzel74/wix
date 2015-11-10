@@ -15,10 +15,16 @@ Platform
 
 * Windows Server 2003 R2
 * Windows 7
-* Windows Server 2008 (R1, R2)
+* Windows Server 2008
+* Windows Server 2008 R2
+* Windows Server 2012
+* Windows Server 2012 R2
 
 Cookbooks
 ---------
+
+Wix requires the .NET framework 4 (4.0, 4.5, 4.5.1, 4.5.2, or 4.6) which can be
+installed via another cookbook of your choosing.
 
 * windows
 
